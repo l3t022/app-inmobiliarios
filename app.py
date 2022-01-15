@@ -6,7 +6,7 @@ st.set_page_config(page_title="Valor de venta en USD por pie cuadrado App")
 
 @st.cache(allow_output_mutation=True)
 def get_model():
-  return load_model(r'C:\Users\Torre\Downloads\UNI\Proyectos\precios-inmobiliarios\modelo_precio_inmobiliario')
+  return load_model('modelo_precio_inmobiliario')
 
 def predict(model, df):
     predictions = predict_model(model, data = df)
